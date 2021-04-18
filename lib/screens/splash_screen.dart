@@ -33,10 +33,10 @@ class _SplashScreenState extends State<SplashScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Background(
-        child: Stack(
-          children: [
-            Column(
+      body: Stack(
+        children: [
+          Center(
+            child: Column(
               children: [
                 Center(
                     child: Lottie.asset(
@@ -53,24 +53,12 @@ class _SplashScreenState extends State<SplashScreen> {
                     )),
               ],
             ),
-            Container(
-                alignment: Alignment.bottomCenter,
-                margin: EdgeInsets.only(bottom: 40, top: 70),
-                child: Row(
-                  children: [
-                    Text(
-                      "Loading",
-                      style: TextStyle(
-                        color: Colors.black,
-                        fontWeight: FontWeight.bold,
-                      ),
-                    ),
-                    SizedBox(width: 20),
-                    CircularProgressIndicator(),
-                  ],
-                )),
-          ],
-        ),
+          ),
+          Container(
+              alignment: Alignment.bottomCenter,
+              margin: EdgeInsets.only(bottom: 40, top: 70),
+              child: CircularProgressIndicator()),
+        ],
       ),
     );
   }

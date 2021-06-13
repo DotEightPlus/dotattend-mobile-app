@@ -4,9 +4,11 @@ import 'package:dot_attend/components/rounded_input_field.dart';
 import 'package:dot_attend/components/rounded_password_field.dart';
 import 'package:dot_attend/screens/Login/components/background.dart';
 import 'package:dot_attend/screens/Signup/signup_screen.dart';
+import 'package:dot_attend/screens/main/home.dart';
 import 'package:flutter/material.dart';
 
 import 'package:flutter_svg/svg.dart';
+import 'package:get/get.dart';
 
 class Body extends StatelessWidget {
   const Body({
@@ -40,7 +42,9 @@ class Body extends StatelessWidget {
             ),
             RoundedButton(
               text: "LOGIN",
-              press: () {},
+              press: () {
+                Get.to(Home());
+              },
             ),
             SizedBox(height: size.height * 0.03),
             AlreadyHaveAnAccountCheck(
@@ -49,7 +53,7 @@ class Body extends StatelessWidget {
                   context,
                   MaterialPageRoute(
                     builder: (context) {
-                      return SignUpScreen();
+                      return Home();
                     },
                   ),
                 );

@@ -4,8 +4,6 @@ import 'package:dot_attend/components/rounded_input_field.dart';
 import 'package:dot_attend/components/rounded_password_field.dart';
 import 'package:dot_attend/screens/Login/login_screen.dart';
 import 'package:dot_attend/screens/Signup/components/background.dart';
-import 'package:dot_attend/screens/Signup/components/or_divider.dart';
-import 'package:dot_attend/screens/Signup/components/social_icon.dart';
 import 'package:flutter/material.dart';
 
 import 'package:flutter_svg/svg.dart';

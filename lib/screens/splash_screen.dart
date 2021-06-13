@@ -1,9 +1,7 @@
-import 'package:dot_attend/resources/auth_methods.dart';
 import 'package:dot_attend/screens/Welcome/welcome_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:lottie/lottie.dart';
 
-import 'Welcome/components/background.dart';
 
 class SplashScreen extends StatefulWidget {
   @override
@@ -18,7 +16,6 @@ class _SplashScreenState extends State<SplashScreen> {
   }
 
   // ignore: unused_field
-  AuthMethods _authMethods = AuthMethods();
 
   /// The dummy time function for splash screen
   splashFunction() {
